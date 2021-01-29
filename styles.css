@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 auto;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  margin-top: 20px;
+  background-color: green;
+  transition: transform 500ms linear;
+}
+.box:focus,
+.box:hover {
+  transform: translatex(5);
+  background-color: black;
+}
+.box:not(:nth-child(2n)) {
+  margin-right: 30px;
+  margin-left: 30px;
+}
