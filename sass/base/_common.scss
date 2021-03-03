@@ -29,3 +29,22 @@ h5,
 h6 {
   margin: 0;
 }
+
+.tel-me {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0.8, 0.5, 0.5, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__please {
+    width: 30px;
+    height: 30px;
+    fill: blue;
+  }
+}
