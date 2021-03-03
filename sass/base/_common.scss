@@ -1,0 +1,31 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: var(--fontfamily-normal);
+  letter-spacing: 0.02em;
+  background-color: var(--bg-color-blue);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

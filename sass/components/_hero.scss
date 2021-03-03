@@ -1,0 +1,13 @@
+.page-hero {
+  padding: 150px 0;
+  background: linear-gradient(
+      90deg,
+      rgba(151, 158, 158, 1) 0%,
+      rgba(57, 53, 55, 1) 0%,
+      rgba(187, 214, 216, 0.5553571770505077) 97%
+    ),
+    url('../images/bg-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

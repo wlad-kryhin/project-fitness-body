@@ -1,0 +1,91 @@
+.instagram {
+  width: 50px;
+  height: 50px;
+  padding: 10px 0;
+  color: #ffffff;
+  &__svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+  &:hover .instagram__svg,
+  &:focus .instagram__svg {
+    fill: var(--color-txt-green);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.navigation-link {
+  color: #393737;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    color: fuchsia;
+  }
+}
+
+.mobile-menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e0e0e0;
+  padding: 30px;
+  transform: translateY(-100%);
+  transition: transform 300ms linear;
+  overflow: scroll;
+
+  &.is-open {
+    transform: translateY(0);
+  }
+}
+.burger-btn {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+.burger-svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+
+  .burger-btn:hover &,
+  .burger-btn:focus & {
+    fill: var(--color-txt-green);
+  }
+}
+.close-menu-btn {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+.cross-svg {
+  fill: currentColor;
+  width: 15px;
+  height: 15px;
+
+  .close-menu-btn:hover &,
+  .close-menu-btn:focus & {
+    fill: var(--color-txt-green);
+  }
+}
