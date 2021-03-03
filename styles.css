@@ -5,55 +5,25 @@ body {
   width: 500px;
   height: 500px;
   border: 2px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-}
-.box {
-  width: 150px;
-  height: 150px;
-  border: 1px solid red;
-  margin-top: 5px;
-  border-radius: 50%;
-  animation: hey 3000ms linear infinite;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-family: sans-serif;
-}
-.box:not(:nth-child(2n)) {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.box:nth-child(1) {
-  background-color: teal;
-}
-.box:nth-child(2) {
-  background-color: aqua;
-}
-.box:nth-child(3) {
-  background-color: pink;
-}
-.box:nth-child(4) {
-  background-color: tomato;
-}
-.box:nth-child(5) {
-  background-color: peru;
-}
-.box:nth-child(6) {
-  background-color: burlywood;
+  background-image: url("./images/wan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: hey 10s linear 100ms infinite alternate both;
 }
 
 @keyframes hey {
   0% {
-    transform: rotate(0deg);
+    background-image: url("./images/two.jpg");
+  }
+  35% {
+    background-image: url("./images/sre.jpg");
+    animation-delay: 3s;
+  }
+  70% {
+    background-image: url("./images/for.jpg");
   }
   100% {
-    transform: rotate(360deg);
+    background-image: url("./images/fajv.jpg");
   }
 }
