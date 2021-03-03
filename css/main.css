@@ -55,6 +55,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: heartBeat 5s linear infinite;
 }
 
 .tel-me__please {
