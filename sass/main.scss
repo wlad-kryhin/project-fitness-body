@@ -1,8 +1,13 @@
 @import 'utils/variables';
+
 @import 'base/common';
 @import 'base/container';
+
 @import 'components/logo';
-@import 'components/header';
-@import 'components/top-header';
-@import 'components/hero';
 @import 'components/subtitle';
+@import 'components/description';
+@import 'layout/header';
+@import 'layout/top-header';
+@import 'layout/hero';
+
+@import 'shops/product-list';
